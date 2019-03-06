@@ -1,0 +1,17 @@
+{
+    "brokers":["", ""],
+    "writer" : {
+        "topic:1" : {
+            "balancer" : "hash",
+            "async" : false
+        }
+    },
+    "reader" : {        
+        "topic:2" : {
+            "groupID" : "",
+            "partition" : 0,
+            "minBytes" : 10e3,
+            "maxBytes" : 10e6
+        }
+    }
+}
